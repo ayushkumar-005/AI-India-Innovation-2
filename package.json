@@ -1,0 +1,24 @@
+{
+    "name": "ai-india-corporate",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node server",
+        "dev": "concurrently \"npx @tailwindcss/cli -i ./public/styles/input.css -o ./public/styles/output.css --content './views/**/*.ejs' --watch\" \"node --watch server.js\"",
+        "build": "npx @tailwindcss/cli -i ./public/styles/input.css -o ./public/styles/output.css --content './views/**/*.ejs'"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "ejs": "^3.1.10",
+        "express": "^5.2.1"
+    },
+    "devDependencies": {
+        "@tailwindcss/cli": "^4.1.17",
+        "concurrently": "^9.2.1",
+        "tailwindcss": "^4.1.17"
+    }
+}

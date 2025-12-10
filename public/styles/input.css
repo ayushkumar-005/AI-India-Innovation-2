@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@source "../../views/**/*.ejs";
+
+@theme {
+    --color-brand-blue: #004a80;
+    --color-brand-light: #f8f9fa;
+    --color-brand-gray: #333333;
+}

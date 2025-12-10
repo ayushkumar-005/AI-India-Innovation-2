@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/styles/output.css" />
+    </head>
+    <body
+        class="bg-white flex flex-col min-h-screen font-sans antialiased text-gray-900"
+    >
+        <div class="sticky top-0 z-50 w-full">
+            <%- include('partials/header') %>
+        </div>
+
+        <main class="flex-grow">
+            <section
+                class="relative h-[600px] flex items-center bg-gray-900 text-white overflow-hidden"
+            >
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/40 z-10"
+                ></div>
+                <img
+                    src="https://plus.unsplash.com/premium_photo-1740363268602-891dbd290783?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="absolute inset-0 w-full h-full object-cover"
+                    alt="Datacenter Background"
+                />
+
+                <div class="container mx-auto px-4 relative z-20 mt-10">
+                    <div class="max-w-3xl">
+                        <div
+                            class="inline-block bg-brand-blue text-xs font-bold px-2 py-1 mb-4 rounded uppercase tracking-widest"
+                        >
+                            Infrastructure First
+                        </div>
+                        <h1
+                            class="text-5xl md:text-6xl font-bold mb-6 leading-tight"
+                        >
+                            Powering India's <br />
+                            <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300"
+                                >Digital Evolution</span
+                            >
+                        </h1>
+                        <p
+                            class="text-lg text-gray-300 mb-8 leading-relaxed max-w-2xl"
+                        >
+                            We build the backbone for modern enterprises. From
+                            bespoke IT services to high-performance GPU
+                            clusters.
+                        </p>
+                        <a
+                            href="#"
+                            class="bg-brand-blue border-2 border-brand-blue text-white px-8 py-3 rounded font-bold hover:bg-blue-800 transition"
+                        >
+                            Explore Solutions
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-20 border-b border-gray-100">
+                <div
+                    class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-16 items-center"
+                >
+                    <div>
+                        <h2 class="text-3xl font-bold text-brand-blue mb-4">
+                            IT Managed Services
+                        </h2>
+                        <div class="w-16 h-1 bg-brand-blue mb-6"></div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            The state of your IT topology is vital in
+                            determining operational efficiency. We provide
+                            comprehensive managed support to ensure your
+                            business is always on.
+                        </p>
+                        <ul class="space-y-3 mb-8 text-gray-700">
+                            <li class="flex items-center gap-2">
+                                <span class="text-brand-blue">✓</span> Network
+                                Architecture & Optimization
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-brand-blue">✓</span> 24/7
+                                Remote & On-site Troubleshooting
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-brand-blue">✓</span>
+                                Cyber-threat Monitoring
+                            </li>
+                        </ul>
+                        <a
+                            href="#"
+                            class="text-brand-blue font-bold hover:underline uppercase tracking-wide text-sm"
+                            >Read More →</a
+                        >
+                    </div>
+                    <div class="relative">
+                        <div
+                            class="absolute -inset-4 border-2 border-gray-100 rounded-lg -z-10 translate-x-4 translate-y-4"
+                        ></div>
+                        <img
+                            src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop"
+                            class="rounded-lg shadow-xl w-full object-cover h-[400px]"
+                            alt="IT Services"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-20 bg-gray-50 border-b border-gray-100">
+                <div
+                    class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-16 items-center"
+                >
+                    <div class="order-2 md:order-1 relative">
+                        <div
+                            class="absolute -inset-4 border-2 border-white rounded-lg -z-10 -translate-x-4 translate-y-4"
+                        ></div>
+                        <img
+                            src="https://images.unsplash.com/photo-1591405351990-4726e331f141?q=80&w=2070&auto=format&fit=crop"
+                            class="rounded-lg shadow-xl w-full object-cover h-[400px]"
+                            alt="Rental Services"
+                        />
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <h2 class="text-3xl font-bold text-brand-blue mb-4">
+                            High-Compute Rentals
+                        </h2>
+                        <div class="w-16 h-1 bg-brand-blue mb-6"></div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Avoid massive CapEx. Rent our high-performance GPU
+                            clusters on demand. Perfect for AI training,
+                            rendering, and scientific simulations.
+                        </p>
+                        <ul class="space-y-3 mb-8 text-gray-700">
+                            <li class="flex items-center gap-2">
+                                <span class="text-brand-blue">✓</span> NVIDIA
+                                A100 / H100 Instances
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-brand-blue">✓</span> Flexible
+                                Hourly & Monthly Plans
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-brand-blue">✓</span>
+                                Pre-configured ML Environments
+                            </li>
+                        </ul>
+                        <a
+                            href="#"
+                            class="text-brand-blue font-bold hover:underline uppercase tracking-wide text-sm"
+                            >View Instances →</a
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-20 border-b border-gray-100">
+                <div
+                    class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-16 items-center"
+                >
+                    <div>
+                        <h2 class="text-3xl font-bold text-brand-blue mb-4">
+                            Server Procurement
+                        </h2>
+                        <div class="w-16 h-1 bg-brand-blue mb-6"></div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            We handle the end-to-end sourcing of
+                            enterprise-grade hardware. From vendor negotiation
+                            to logistics, we ensure you get the best specs for
+                            your budget.
+                        </p>
+                        <ul class="space-y-3 mb-8 text-gray-700">
+                            <li class="flex items-center gap-2">
+                                <span class="text-brand-blue">✓</span> OEM
+                                Partnerships (Dell, HPE, Lenovo)
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-brand-blue">✓</span> Custom
+                                Configuration Import
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-brand-blue">✓</span> Warranty
+                                & License Management
+                            </li>
+                        </ul>
+                        <a
+                            href="#"
+                            class="text-brand-blue font-bold hover:underline uppercase tracking-wide text-sm"
+                            >Get a Quote →</a
+                        >
+                    </div>
+                    <div class="relative">
+                        <div
+                            class="absolute -inset-4 border-2 border-gray-100 rounded-lg -z-10 translate-x-4 translate-y-4"
+                        ></div>
+                        <img
+                            src="https://plus.unsplash.com/premium_photo-1764695687540-e74999b2b87b?q=80&w=884&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="rounded-lg shadow-xl w-full object-cover h-[400px]"
+                            alt="Server Procurement"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-20 bg-gray-50 border-b border-gray-100">
+                <div
+                    class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-16 items-center"
+                >
+                    <div class="order-2 md:order-1 relative">
+                        <div
+                            class="absolute -inset-4 border-2 border-white rounded-lg -z-10 -translate-x-4 translate-y-4"
+                        ></div>
+                        <img
+                            src="https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="rounded-lg shadow-xl w-full object-cover h-[400px]"
+                            alt="Data Center Setup"
+                        />
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <h2 class="text-3xl font-bold text-brand-blue mb-4">
+                            Data Center Setup
+                        </h2>
+                        <div class="w-16 h-1 bg-brand-blue mb-6"></div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Building your private cloud? We design and deploy
+                            physical infrastructure, ensuring optimal cooling,
+                            power redundancy, and security.
+                        </p>
+                        <ul class="space-y-3 mb-8 text-gray-700">
+                            <li class="flex items-center gap-2">
+                                <span class="text-brand-blue">✓</span> Rack &
+                                Cabling Structured Design
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-brand-blue">✓</span> Precision
+                                Cooling Solutions
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-brand-blue">✓</span> Fire
+                                Suppression & Biometric Access
+                            </li>
+                        </ul>
+                        <a
+                            href="#"
+                            class="text-brand-blue font-bold hover:underline uppercase tracking-wide text-sm"
+                            >Our Approach →</a
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-20 border-b border-gray-100">
+                <div
+                    class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-16 items-center"
+                >
+                    <div>
+                        <h2 class="text-3xl font-bold text-brand-blue mb-4">
+                            Document Digitalization
+                        </h2>
+                        <div class="w-16 h-1 bg-brand-blue mb-6"></div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Transition to a paperless office. We transform
+                            physical records into searchable, secure digital
+                            assets using advanced OCR technology.
+                        </p>
+                        <ul class="space-y-3 mb-8 text-gray-700">
+                            <li class="flex items-center gap-2">
+                                <span class="text-brand-blue">✓</span>
+                                High-Volume Scanning
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-brand-blue">✓</span> OCR &
+                                Metadata Tagging
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-brand-blue">✓</span> Secure
+                                Cloud Archiving (DMS)
+                            </li>
+                        </ul>
+                        <a
+                            href="#"
+                            class="text-brand-blue font-bold hover:underline uppercase tracking-wide text-sm"
+                            >Digitize Now →</a
+                        >
+                    </div>
+                    <div class="relative">
+                        <div
+                            class="absolute -inset-4 border-2 border-gray-100 rounded-lg -z-10 translate-x-4 translate-y-4"
+                        ></div>
+                        <img
+                            src="https://images.unsplash.com/photo-1618044733300-9472054094ee?q=80&w=2071&auto=format&fit=crop"
+                            class="rounded-lg shadow-xl w-full object-cover h-[400px]"
+                            alt="Digitalization"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-20 bg-gray-50">
+                <div
+                    class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-16 items-center"
+                >
+                    <div class="order-2 md:order-1 relative">
+                        <div
+                            class="absolute -inset-4 border-2 border-white rounded-lg -z-10 -translate-x-4 translate-y-4"
+                        ></div>
+                        <img
+                            src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1965&auto=format&fit=crop"
+                            class="rounded-lg shadow-xl w-full object-cover h-[400px]"
+                            alt="AI Software"
+                        />
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <h2 class="text-3xl font-bold text-brand-blue mb-4">
+                            AI-Based Software Development
+                        </h2>
+                        <div class="w-16 h-1 bg-brand-blue mb-6"></div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Custom AI solutions tailored to your industry. From
+                            chatbots to predictive analytics, we build software
+                            that thinks.
+                        </p>
+                        <ul class="space-y-3 mb-8 text-gray-700">
+                            <li class="flex items-center gap-2">
+                                <span class="text-brand-blue">✓</span> Custom
+                                LLM Training
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-brand-blue">✓</span> Workflow
+                                Automation Bots
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-brand-blue">✓</span>
+                                Predictive Analytics Dashboards
+                            </li>
+                        </ul>
+                        <a
+                            href="#"
+                            class="text-brand-blue font-bold hover:underline uppercase tracking-wide text-sm"
+                            >Explore AI →</a
+                        >
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <%- include('partials/footer') %>
+    </body>
+</html>
