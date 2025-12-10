@@ -1,32 +1,36 @@
-<div class="bg-brand-blue text-white text-xs py-2">
+<div class="bg-brand-blue text-white text-xs py-2 relative z-50">
     <div class="container mx-auto px-4 flex justify-between items-center">
-        <div class="flex gap-6">
+        <div class="flex gap-4 sm:gap-6">
             <a
-                href="mailto:info@netaccess-india.com"
-                class="hover:text-gray-300 flex items-center gap-1"
+                href="mailto:info@ai-india-innovation.com"
+                class="hover:text-gray-300 flex items-center gap-2"
             >
-                <span> <i class="fa-solid fa-message"></i></span>
-                info@ai-india-innovation.com
+                <i class="fas fa-envelope"></i>
+                <span class="hidden sm:inline"
+                    >info@ai-india-innovation.com</span
+                >
+                <span class="sm:hidden">info@ai-india-innovation.com</span>
             </a>
             <a
-                href="tel:+917358300888"
-                class="hover:text-gray-300 flex items-center gap-1"
+                href="tel:+911111111111"
+                class="hover:text-gray-300 flex items-center gap-2"
             >
-                <span><i class="fa-solid fa-phone"></i></span> +91 11111 11111
+                <i class="fas fa-phone"></i> +91 11111 11111
             </a>
         </div>
-        <div>
+
+        <div class="hidden md:block">
             <a
                 href="#"
-                class="bg-white text-brand-blue px-3 py-1 font-bold rounded hover:bg-gray-100 transition"
+                class="bg-white text-brand-blue px-3 py-1 font-bold rounded hover:bg-gray-100 transition flex items-center gap-1"
             >
-                Download Brochure
+                <i class="fas fa-file"></i> Download Brochure
             </a>
         </div>
     </div>
 </div>
 
-<nav class="bg-white shadow-md sticky top-0 z-50">
+<nav class="bg-white shadow-md sticky top-0 z-40">
     <div class="container mx-auto px-4">
         <div class="flex justify-between items-center h-20">
             <a
@@ -40,27 +44,25 @@
             </a>
 
             <div
-                class="hidden md:flex gap-6 items-center text-sm font-semibold text-gray-700 h-full"
+                class="hidden md:flex gap-8 items-center text-sm font-semibold text-gray-700 h-full"
             >
                 <a
                     href="/"
                     class="hover:text-brand-blue h-full flex items-center border-b-2 border-transparent hover:border-brand-blue transition-all"
+                    >Home</a
                 >
-                    Home
-                </a>
 
                 <div class="group relative h-full flex items-center">
                     <button
-                        class="flex items-center gap-1 hover:text-brand-blue focus:outline-none"
+                        class="flex items-center gap-1 hover:text-brand-blue focus:outline-none py-4"
                     >
                         Services
-                        <span
-                            class="text-xs transition-transform duration-300 group-hover:rotate-180"
-                            >▼</span
-                        >
+                        <i
+                            class="fas fa-chevron-down text-[10px] transition-transform duration-300 group-hover:rotate-180"
+                        ></i>
                     </button>
                     <div
-                        class="absolute top-full left-0 w-[600px] bg-white shadow-xl border-t-4 border-brand-blue opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 p-6 grid grid-cols-2 gap-6 translate-y-4 group-hover:translate-y-0"
+                        class="absolute top-[80px] -left-10 w-[600px] bg-white shadow-2xl border-t-4 border-brand-blue opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-6 grid grid-cols-2 gap-6 cursor-default transform translate-y-2 group-hover:translate-y-0"
                     >
                         <div>
                             <h4
@@ -127,111 +129,64 @@
 
                 <div class="group relative h-full flex items-center">
                     <button
-                        class="flex items-center gap-1 hover:text-brand-blue focus:outline-none"
+                        class="flex items-center gap-1 hover:text-brand-blue focus:outline-none py-4"
                     >
                         Industries
-                        <span
-                            class="text-xs transition-transform duration-300 group-hover:rotate-180"
-                            >▼</span
-                        >
+                        <i
+                            class="fas fa-chevron-down text-[10px] transition-transform duration-300 group-hover:rotate-180"
+                        ></i>
                     </button>
                     <div
-                        class="absolute top-full -left-10 w-[500px] bg-white shadow-xl border-t-4 border-brand-blue opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 p-6 grid grid-cols-2 gap-4 translate-y-4 group-hover:translate-y-0"
-                    >
-                        <ul class="space-y-2 text-gray-600 font-normal">
-                            <li>
-                                <a href="#" class="hover:text-brand-blue block"
-                                    >Manufacturing</a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" class="hover:text-brand-blue block"
-                                    >Banking & Finance</a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" class="hover:text-brand-blue block"
-                                    >Healthcare</a
-                                >
-                            </li>
-                        </ul>
-                        <ul class="space-y-2 text-gray-600 font-normal">
-                            <li>
-                                <a href="#" class="hover:text-brand-blue block"
-                                    >Retail & Logistics</a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" class="hover:text-brand-blue block"
-                                    >Travel & Hospitality</a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" class="hover:text-brand-blue block"
-                                    >Agribusiness</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="group relative h-full flex items-center">
-                    <button
-                        class="flex items-center gap-1 hover:text-brand-blue focus:outline-none"
-                    >
-                        Resources
-                        <span
-                            class="text-xs transition-transform duration-300 group-hover:rotate-180"
-                            >▼</span
-                        >
-                    </button>
-                    <div
-                        class="absolute top-full left-0 w-48 bg-white shadow-xl border-t-4 border-brand-blue opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-2 translate-y-4 group-hover:translate-y-0 flex flex-col"
+                        class="absolute top-[80px] left-0 w-64 bg-white shadow-2xl border-t-4 border-brand-blue opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 cursor-default transform translate-y-2 group-hover:translate-y-0 flex flex-col"
                     >
                         <a
                             href="#"
-                            class="px-4 py-2 hover:bg-gray-50 hover:text-brand-blue font-normal text-gray-600"
-                            >Blogs & Articles</a
+                            class="px-6 py-2 hover:bg-gray-50 hover:text-brand-blue font-normal text-gray-600 block"
+                            >Manufacturing</a
                         >
                         <a
                             href="#"
-                            class="px-4 py-2 hover:bg-gray-50 hover:text-brand-blue font-normal text-gray-600"
-                            >Case Studies</a
+                            class="px-6 py-2 hover:bg-gray-50 hover:text-brand-blue font-normal text-gray-600 block"
+                            >Banking & Finance</a
                         >
                         <a
                             href="#"
-                            class="px-4 py-2 hover:bg-gray-50 hover:text-brand-blue font-normal text-gray-600"
-                            >Investors</a
+                            class="px-6 py-2 hover:bg-gray-50 hover:text-brand-blue font-normal text-gray-600 block"
+                            >Healthcare</a
+                        >
+                        <a
+                            href="#"
+                            class="px-6 py-2 hover:bg-gray-50 hover:text-brand-blue font-normal text-gray-600 block"
+                            >Retail & Logistics</a
                         >
                     </div>
                 </div>
 
                 <div class="group relative h-full flex items-center">
                     <button
-                        class="flex items-center gap-1 hover:text-brand-blue focus:outline-none"
+                        class="flex items-center gap-1 hover:text-brand-blue focus:outline-none py-4"
                     >
                         About
-                        <span
-                            class="text-xs transition-transform duration-300 group-hover:rotate-180"
-                            >▼</span
-                        >
+                        <i
+                            class="fas fa-chevron-down text-[10px] transition-transform duration-300 group-hover:rotate-180"
+                        ></i>
                     </button>
                     <div
-                        class="absolute top-full left-0 w-48 bg-white shadow-xl border-t-4 border-brand-blue opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-2 translate-y-4 group-hover:translate-y-0 flex flex-col"
+                        class="absolute top-[80px] left-0 w-56 bg-white shadow-2xl border-t-4 border-brand-blue opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 cursor-default transform translate-y-2 group-hover:translate-y-0 flex flex-col"
                     >
                         <a
                             href="#"
-                            class="px-4 py-2 hover:bg-gray-50 hover:text-brand-blue font-normal text-gray-600"
+                            class="px-6 py-2 hover:bg-gray-50 hover:text-brand-blue font-normal text-gray-600 block"
                             >Company Overview</a
                         >
                         <a
                             href="#"
-                            class="px-4 py-2 hover:bg-gray-50 hover:text-brand-blue font-normal text-gray-600"
-                            >Leadership</a
+                            class="px-6 py-2 hover:bg-gray-50 hover:text-brand-blue font-normal text-gray-600 block"
+                            >Leadership Team</a
                         >
                         <a
                             href="#"
-                            class="px-4 py-2 hover:bg-gray-50 hover:text-brand-blue font-normal text-gray-600"
+                            class="px-6 py-2 hover:bg-gray-50 hover:text-brand-blue font-normal text-gray-600 block"
                             >Careers</a
                         >
                     </div>
@@ -239,11 +194,212 @@
 
                 <a
                     href="#"
-                    class="bg-brand-blue text-white px-5 py-2 rounded hover:bg-blue-800 transition shadow-md hover:shadow-lg transform hover:-translate-y-0.5 ml-4"
+                    class="bg-brand-blue text-white px-6 py-2 rounded hover:bg-blue-800 transition shadow-md hover:shadow-lg transform hover:-translate-y-0.5 ml-4"
                 >
                     Contact Us
                 </a>
             </div>
+
+            <button
+                id="mobile-menu-btn"
+                class="md:hidden text-2xl text-brand-blue focus:outline-none p-2 border border-transparent rounded hover:bg-gray-100 transition"
+            >
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-gray-200 shadow-xl absolute w-full left-0 top-[80px] z-50 h-[calc(100vh-80px)] overflow-y-auto pb-20"
+    >
+        <div class="flex flex-col p-6 space-y-2 font-semibold text-gray-700">
+            <a
+                href="/"
+                class="block py-3 border-b border-gray-100 hover:text-brand-blue text-lg"
+                >Home</a
+            >
+
+            <div class="border-b border-gray-100">
+                <button
+                    onclick="toggleSubmenu('mob-services', this)"
+                    class="w-full flex justify-between items-center py-4 text-left focus:outline-none group"
+                >
+                    <span class="text-brand-blue text-lg">Services</span>
+                    <i
+                        class="fas fa-chevron-down text-sm text-gray-400 transition-transform duration-300"
+                    ></i>
+                </button>
+                <div
+                    id="mob-services"
+                    class="hidden bg-gray-50 rounded-lg mb-4 overflow-hidden"
+                >
+                    <div class="p-4 space-y-3">
+                        <p
+                            class="text-xs uppercase text-gray-400 font-bold tracking-widest mb-1"
+                        >
+                            Infrastructure
+                        </p>
+                        <a
+                            href="#"
+                            class="block text-gray-600 hover:text-brand-blue pl-2"
+                            >Data Center Services</a
+                        >
+                        <a
+                            href="#"
+                            class="block text-gray-600 hover:text-brand-blue pl-2"
+                            >Network Management</a
+                        >
+                        <a
+                            href="#"
+                            class="block text-gray-600 hover:text-brand-blue pl-2"
+                            >Cloud Solutions</a
+                        >
+
+                        <div class="h-px bg-gray-200 my-2"></div>
+
+                        <p
+                            class="text-xs uppercase text-gray-400 font-bold tracking-widest mb-1"
+                        >
+                            End-User Support
+                        </p>
+                        <a
+                            href="#"
+                            class="block text-gray-600 hover:text-brand-blue pl-2"
+                            >IT Help Desk</a
+                        >
+                        <a
+                            href="#"
+                            class="block text-gray-600 hover:text-brand-blue pl-2"
+                            >Endpoint Security</a
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-b border-gray-100">
+                <button
+                    onclick="toggleSubmenu('mob-industries', this)"
+                    class="w-full flex justify-between items-center py-4 text-left focus:outline-none group"
+                >
+                    <span class="text-brand-blue text-lg">Industries</span>
+                    <i
+                        class="fas fa-chevron-down text-sm text-gray-400 transition-transform duration-300"
+                    ></i>
+                </button>
+                <div
+                    id="mob-industries"
+                    class="hidden bg-gray-50 rounded-lg mb-4 overflow-hidden"
+                >
+                    <div class="p-4 space-y-3">
+                        <a
+                            href="#"
+                            class="block text-gray-600 hover:text-brand-blue pl-2"
+                            >Manufacturing</a
+                        >
+                        <a
+                            href="#"
+                            class="block text-gray-600 hover:text-brand-blue pl-2"
+                            >Banking & Finance</a
+                        >
+                        <a
+                            href="#"
+                            class="block text-gray-600 hover:text-brand-blue pl-2"
+                            >Healthcare</a
+                        >
+                        <a
+                            href="#"
+                            class="block text-gray-600 hover:text-brand-blue pl-2"
+                            >Retail & Logistics</a
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-b border-gray-100">
+                <button
+                    onclick="toggleSubmenu('mob-about', this)"
+                    class="w-full flex justify-between items-center py-4 text-left focus:outline-none group"
+                >
+                    <span class="text-brand-blue text-lg">About</span>
+                    <i
+                        class="fas fa-chevron-down text-sm text-gray-400 transition-transform duration-300"
+                    ></i>
+                </button>
+                <div
+                    id="mob-about"
+                    class="hidden bg-gray-50 rounded-lg mb-4 overflow-hidden"
+                >
+                    <div class="p-4 space-y-3">
+                        <a
+                            href="#"
+                            class="block text-gray-600 hover:text-brand-blue pl-2"
+                            >Company Overview</a
+                        >
+                        <a
+                            href="#"
+                            class="block text-gray-600 hover:text-brand-blue pl-2"
+                            >Leadership Team</a
+                        >
+                        <a
+                            href="#"
+                            class="block text-gray-600 hover:text-brand-blue pl-2"
+                            >Careers</a
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <a
+                href="#"
+                class="block w-full bg-brand-blue text-white text-center py-4 rounded-lg font-bold text-lg mt-6 shadow-lg active:bg-blue-800 transition"
+            >
+                Contact Us
+            </a>
         </div>
     </div>
 </nav>
+
+<script>
+    // 1. Mobile Menu Toggle
+    const btn = document.getElementById("mobile-menu-btn");
+    const menu = document.getElementById("mobile-menu");
+    const icon = btn.querySelector("i");
+
+    // Prevent body scroll when menu is open
+    const body = document.body;
+
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+
+        if (menu.classList.contains("hidden")) {
+            // Menu Closed
+            icon.classList.remove("fa-times");
+            icon.classList.add("fa-bars");
+            body.style.overflow = "auto"; // Re-enable scrolling
+        } else {
+            // Menu Open
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-times");
+            body.style.overflow = "hidden"; // Lock background scrolling
+        }
+    });
+
+    // 2. Accordion Logic
+    function toggleSubmenu(id, btnElement) {
+        const submenu = document.getElementById(id);
+        const arrow = btnElement.querySelector(".fa-chevron-down");
+
+        if (submenu.classList.contains("hidden")) {
+            // Open it
+            submenu.classList.remove("hidden");
+            arrow.style.transform = "rotate(180deg)";
+            btnElement.classList.add("text-brand-blue"); // Highlight active title
+        } else {
+            // Close it
+            submenu.classList.add("hidden");
+            arrow.style.transform = "rotate(0deg)";
+            btnElement.classList.remove("text-brand-blue");
+        }
+    }
+</script>
